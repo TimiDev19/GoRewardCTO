@@ -2,7 +2,7 @@
 import FadeInFromBottom from '@/components/FadeInFromBottom';
 import { Nunito_Sans, Open_Sans, Tektur } from 'next/font/google';
 import Image from 'next/image';
-import React from 'react'
+import React, { useEffect } from 'react'
 import Logo from "@/assets/reward.jpg"
 import { CopyAll } from '@mui/icons-material';
 import { useState } from 'react';
@@ -23,6 +23,10 @@ const tektur = Tektur({
     weight: ['400', '500', '600', '700'],
 });
 
+const text = 'Welcome To GoReward CTO';
+const speed = 100; // ms per character
+const pause = 2000; // pause before looping
+
 const Hero = () => {
     const [copied, setCopied] = useState(false);
 
@@ -38,12 +42,34 @@ const Hero = () => {
                 console.error("Failed to copy text: ", err);
             });
     };
+
+    const [displayed, setDisplayed] = useState('');
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        let timeout;
+
+        if (index < text.length) {
+            timeout = setTimeout(() => {
+                setDisplayed((prev) => prev + text[index]);
+                setIndex((prev) => prev + 1);
+            }, speed);
+        } else {
+            timeout = setTimeout(() => {
+                setDisplayed('');
+                setIndex(0);
+            }, pause);
+        }
+
+        return () => clearTimeout(timeout);
+    }, [index]);
+
     return (
         <div
             id='home'
             className=''
         >
-            <div className=' overflow-hidden bg-blue-900 pt-[90px] min-h-[100vh] w-screen flex flex-col items-center justify-start lg:flex-row lg:items-center lg:justify-between lg:px-[20px]'>
+            <div className=' overflow-hidden bg-gradient-to-tr from-blue-500 to-blue-900 bg-blue-900 pt-[90px] min-h-[100vh] w-screen flex flex-col items-center justify-start lg:flex-row lg:items-center lg:justify-between lg:px-[20px]'>
                 <div className=' w-[95%] m-auto lg:w-[50%] h-[30%] z-[3] flex items-center justify-start text-left'>
                     <FadeInFromBottom>
                         <div className={openSans.className}>
@@ -56,7 +82,7 @@ const Hero = () => {
                                 GoReward CTO
                             </h1>
                             <h1 className=' font-bold text-white text-lg lg:text-4xl mb-3'>
-                                <span className={tektur.className}>Welcome To GoReward CTO</span> <br /> <span className="font-extrabold">The people's</span> <span className=' text-green-500 font-extrabold'>memecoin</span>
+                                <span className={tektur.className}>{displayed}<span className="animate-blink">|</span></span> <br /> <span className="font-extrabold">The people's</span> <span className=' text-green-500 font-extrabold'>memecoin</span>
                             </h1>
                             <div className=' flex items-center justify-start'>
                                 <Image
@@ -72,29 +98,29 @@ const Hero = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className=' flex items-center justify-end w-full'>
-                                <div className=' bg-green-500/20 text-green-500 lg:h-[100px] w-[97%] mx-auto lg:mx-0 lg:w-[75%] flex flex-col lg:flex-row items-center justify-between  p-4'>
-                                    <div className={tektur.className}>
-                                        <div onClick={handleCopy} className=' max-w-[90vw] lg:max-w-[30vw] flex flex-col items-center justify-center bg-transparent text-green-500 py-1 w-[95%] lg:w-fit mx-auto lg:mx-0 px-4 rounded-md'>
-                                            <h1 className=" w-full truncate mr-4 cursor-pointer font-extrabold text-green-500 break-words break-all overflow-wrap text-md md:text-xl text-center lg:text-3xl max-w-full">
-                                                {textToCopy}
-                                            </h1>
-                                            <h1 className=' cursor-pointer'>{copied ? (<span className="text-green-500">Text copied to clipboard!</span>) : (<span><CopyAll /> Click to copy CA</span>)}</h1>
-                                            {/* {copied && <} */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </FadeInFromBottom>
                 </div>
 
-                <div className=' lg:w-[45%] h-[50vh] flex items-center justify-center lg:h-full'>
+                <div className=' lg:w-[45%] h-[50vh] flex flex-col items-center justify-center lg:h-full'>
                     <Image
                         alt=''
                         src={Logo}
-                        className=' w-full lg:w-[80%] rounded-full animate-bounce'
+                        className=' w-full lg:w-[80%] rounded-t-2xl'
                     />
+                    <div className=' flex items-center justify-center w-full'>
+                        <div className=' bg-green-500/20 text-green-500 lg:h-[100px] w-[97%] mx-auto lg:mx-0 lg:w-[80%] flex flex-col lg:flex-row items-center justify-between  p-4'>
+                            <div className={tektur.className}>
+                                <div onClick={handleCopy} className=' max-w-[90vw] lg:max-w-[30vw] flex flex-col items-center justify-center bg-transparent text-green-500 py-1 w-[95%] lg:w-fit mx-auto lg:mx-0 px-4 rounded-md'>
+                                    <h1 className=" w-full truncate mr-4 cursor-pointer font-extrabold text-green-500 break-words break-all overflow-wrap text-md md:text-xl text-center lg:text-3xl max-w-full">
+                                        {textToCopy}
+                                    </h1>
+                                    <h1 className=' cursor-pointer'>{copied ? (<span className="text-green-500">Text copied to clipboard!</span>) : (<span><CopyAll /> Click to copy CA</span>)}</h1>
+                                    {/* {copied && <} */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* <div className=' h-[20vh] lg:h-[60vh] w-screen banner1'></div> */}

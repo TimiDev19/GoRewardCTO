@@ -5,7 +5,7 @@ import About from './sections/About'
 
 const Homepage = () => {
     return (
-        <div className=' h-[100vh] overflow-y-scroll scroll-smooth pb-[20px] overflow-x-hidden'>
+        <div className=' h-[100vh] overflow-y-scroll scroll-smooth pb-[20px] overflow-x-hidden bg-blue-900'>
             <Hero />
             <About />
         </div>

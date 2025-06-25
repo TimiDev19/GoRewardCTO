@@ -22,7 +22,7 @@ const RollingBall = () => {
 
     return (
         <>
-            <div ref={ref} className="pt-[90px] flex relative flex-col items-center justify-center min-h-screen bg-blue-900 overflow-hidden py-[10px]">
+            <div ref={ref} className="pt-[90px] flex relative flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-blue-500 to-blue-900 overflow-hidden py-[10px]">
                 {/* Text that will be revealed */}
                 <AnimatePresence>
                     <motion.h1
