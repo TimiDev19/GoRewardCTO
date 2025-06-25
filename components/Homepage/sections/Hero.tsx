@@ -67,7 +67,7 @@ const Hero = () => {
     return (
         <div
             id='home'
-            className=''
+            className=' min-h-fit'
         >
             <div className=' overflow-hidden bg-gradient-to-tr from-blue-500 to-blue-900 bg-blue-900 pt-[90px] min-h-[100vh] w-screen flex flex-col items-center justify-start lg:flex-row lg:items-center lg:justify-between lg:px-[20px]'>
                 <div className=' w-[95%] m-auto lg:w-[50%] h-[30%] z-[3] flex items-center justify-start text-left'>
@@ -102,7 +102,7 @@ const Hero = () => {
                     </FadeInFromBottom>
                 </div>
 
-                <div className=' lg:w-[45%] h-[50vh] flex flex-col items-center justify-center lg:h-full'>
+                <div className=' lg:w-[45%] min-h-[50vh] flex flex-col items-center justify-center lg:h-full'>
                     <Image
                         alt=''
                         src={Logo}
