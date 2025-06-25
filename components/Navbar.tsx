@@ -35,10 +35,10 @@ const Navbar = () => {
                             <div className=' flex items-center justify-start'>
                                 <Image
                                     src={Logo}
-                                    alt='GoReward Logo'
+                                    alt='GorReward Logo'
                                     className=' w-[50px] h-[50px] rounded-full'
                                 />
-                                <h1 className=' uppercase font-semibold text-xl lg:text-2xl ml-3 hidden lg:block'>GoReward</h1>
+                                <h1 className=' uppercase font-semibold text-xl lg:text-2xl ml-3 hidden lg:block'>GorReward</h1>
                             </div>
                         </div>
                     </div>

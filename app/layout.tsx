@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GoReward CTO",
-  description: "The official website of GoReward CTO",
+  title: "GorReward CTO",
+  description: "The official website of GorReward CTO",
 };
 
 export default function RootLayout({

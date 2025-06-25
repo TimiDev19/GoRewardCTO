@@ -41,11 +41,11 @@ const RollingBall = () => {
                                     alt="Apexium Logo"
                                     className=' w-[50px] h-[50px] rounded-full mr-3'
                                 />
-                                About GoReward CTO
+                                About GorReward CTO
                             </span>
                             <span className=" text-xl font-medium mb-4">
 
-                                Behind the scenes of GoReward, the viral Web3 memecoin with utility and attitude,
+                                Behind the scenes of GorReward, the viral Web3 memecoin with utility and attitude,
                                 is CTO Luna Okoro — a blockchain builder with a meme-loving heart and a security-first brain. <br /> <br />
 
 

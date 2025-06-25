@@ -23,7 +23,7 @@ const tektur = Tektur({
     weight: ['400', '500', '600', '700'],
 });
 
-const text = 'Welcome To GoReward CTO';
+const text = 'Welcome To GorReward CTO';
 const speed = 100; // ms per character
 const pause = 2000; // pause before looping
 
@@ -79,7 +79,7 @@ const Hero = () => {
                                     alt="Apexium Logo"
                                     className=' w-[50px] h-[50px] rounded-full mr-3'
                                 />
-                                GoReward CTO
+                                GorReward CTO
                             </h1>
                             <h1 className=' font-bold text-white text-lg lg:text-4xl mb-3'>
                                 <span className={tektur.className}>{displayed}<span className="animate-blink">|</span></span> <br /> <span className="font-extrabold">The people's</span> <span className=' text-green-500 font-extrabold'>memecoin</span>
@@ -93,7 +93,7 @@ const Hero = () => {
                                 <div className=' bg-green-500/20 w-fit py-2 px-4'>
                                     <div className={openSans.className}>
                                         <h1 className=' capitalize font-semibold text-green-500 text-sm lg:text-lg'>
-                                            GoReward’s CTO turning memes into code and chaos into smart contracts.
+                                            GorReward’s CTO turning memes into code and chaos into smart contracts.
                                         </h1>
                                     </div>
                                 </div>
