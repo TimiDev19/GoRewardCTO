@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import { Nunito_Sans, Tektur } from 'next/font/google';
-import Logo from "@/assets/logo.jpg"
+import Logo from "@/assets/reward.jpg"
 import Link from 'next/link';
 import Image from 'next/image';
 import FadeIn from './FadeIn';

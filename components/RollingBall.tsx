@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import Logo from "@/assets/logo.jpg"
+import Logo from "@/assets/reward.jpg"
 import Link from "next/link";
 import { Book, BookOpenText } from "lucide-react";
 

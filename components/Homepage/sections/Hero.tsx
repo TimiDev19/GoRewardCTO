@@ -3,7 +3,7 @@ import FadeInFromBottom from '@/components/FadeInFromBottom';
 import { Nunito_Sans, Open_Sans, Tektur } from 'next/font/google';
 import Image from 'next/image';
 import React from 'react'
-import Logo from "@/assets/logo.jpg"
+import Logo from "@/assets/reward.jpg"
 import { CopyAll } from '@mui/icons-material';
 import { useState } from 'react';
 
