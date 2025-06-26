@@ -6,3 +6,10 @@
   background-position: center;
   background-size: cover;
 }
+
+.banner1 {
+  background-image: url("../assets/gorBanner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

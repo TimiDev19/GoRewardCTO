@@ -6,6 +6,10 @@ import React, { useEffect } from 'react'
 import Logo from "@/assets/reward.jpg"
 import { CopyAll } from '@mui/icons-material';
 import { useState } from 'react';
+import Link from 'next/link';
+import dex from '@/assets/dex-screener-seeklogo.png'
+import telegram from "@/assets/telegram.png"
+import x from "@/assets/x.webp"
 
 
 const nunitoSans = Nunito_Sans({
@@ -76,7 +80,7 @@ const Hero = () => {
                             <h1 className=' mb-4 flex items-center justify-center uppercase font-bold text-black text-2xl lg:text-6xl p-2 bg-gradient-to-tr from-green-700 to-green-300 w-full mx-auto lg:mx-0 lg:w-fit rounded-xl'>
                                 <Image
                                     src={Logo}
-                                    alt="Apexium Logo"
+                                    alt="GorReward Logo"
                                     className=' w-[50px] h-[50px] rounded-full mr-3'
                                 />
                                 GorReward CTO
@@ -99,10 +103,42 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className=' mt-[20px] mb-[10px] flex items-center justify-start'>
+                            <Link href="https://dexscreener.com/solana/6eGgtwbStZTmamHTibbx9RvLUjYAymd7DxGHQcmobRrL"
+                                target='blank'
+                                className=' flex items-center justify-center h-[60px] lg:h-[80px] w-[60px] lg:w-[80px] rounded-full border-green-500 border mx-2 bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700 hover:border-transparent'
+                            >
+                                <Image
+                                    src={dex}
+                                    alt=''
+                                    className=' h-[50px] lg:h-[70px] w-[50px] lg:w-[70px] rounded-full'
+                                />
+                            </Link>
+                            <Link href="https://t.me/GorReward"
+                                target='blank'
+                                className=' flex items-center justify-center h-[60px] lg:h-[80px] w-[60px] lg:w-[80px] rounded-full border-green-500 border mx-2 bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700 hover:border-transparent'
+                            >
+                                <Image
+                                    src={telegram}
+                                    alt=''
+                                    className=' h-[50px] lg:h-[70px] w-[50px] lg:w-[70px] rounded-full'
+                                />
+                            </Link>
+                            <Link href="https://x.com/i/communities/1937761327298269353"
+                                target='blank'
+                                className=' flex items-center justify-center h-[60px] lg:h-[80px] w-[60px] lg:w-[80px] rounded-full border-green-500 border mx-2 bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700 hover:border-transparent'
+                            >
+                                <Image
+                                    src={x}
+                                    alt=''
+                                    className=' h-[50px] lg:h-[70px] w-[50px] lg:w-[70px] rounded-full'
+                                />
+                            </Link>
+                        </div>
                     </FadeInFromBottom>
                 </div>
 
-                <div className=' lg:w-[45%] min-h-[50vh] flex flex-col items-center justify-center lg:h-full'>
+                <div className=' w-[95%] lg:w-[45%] min-h-[50vh] flex flex-col items-center justify-center lg:h-full'>
                     <Image
                         alt=''
                         src={Logo}
@@ -123,7 +159,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className=' h-[20vh] lg:h-[60vh] w-screen banner1'></div> */}
+            <div className=' h-[20vh] lg:h-[60vh] w-screen banner1'></div>
         </div>
     )
 }
