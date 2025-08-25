@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import Logo from "@/assets/reward.jpg"
+import Logo from "@/assets/bananaInu.jpg"
 import Link from "next/link";
 import { Book, BookOpenText } from "lucide-react";
 
@@ -22,7 +22,7 @@ const RollingBall = () => {
 
     return (
         <>
-            <div ref={ref} className="pt-[90px] flex relative flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-blue-500 to-blue-900 overflow-hidden py-[10px]">
+            <div ref={ref} className="pt-[90px] flex relative flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-white to-white overflow-hidden py-[10px]">
                 {/* Text that will be revealed */}
                 <AnimatePresence>
                     <motion.h1
@@ -34,37 +34,33 @@ const RollingBall = () => {
                         transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
                         <div className=" w-[95%] lg:w-[65%] mx-auto">
-                            <span className=" w-[95%] lg:w-[65%] mx-auto text-xl lg:text-4xl">Time to learn</span>
-                            <span className=' mb-4 flex items-center justify-center uppercase font-bold text-black text-2xl lg:text-6xl p-2 bg-gradient-to-tr from-green-700 to-green-300 w-fit rounded-xl'>
+                            <span className=" w-[95%] lg:w-[65%] mx-auto text-xl lg:text-4xl text-amber-600">Time to learn</span>
+                            <span className=' mb-4 flex items-center justify-center uppercase font-bold text-white text-2xl lg:text-6xl p-2 bg-gradient-to-tr from-amber-500 to-amber-300 w-fit rounded-xl'>
                                 <Image
                                     src={Logo}
                                     alt="Apexium Logo"
                                     className=' w-[50px] h-[50px] rounded-full mr-3'
                                 />
-                                About GorReward CTO
+                                About Banana Inu
                             </span>
-                            <span className=" text-xl font-medium mb-4">
+                            <span className=" text-xl font-medium mb-4 text-amber-600">
 
-                                Behind the scenes of GorReward, the viral Web3 memecoin with utility and attitude,
-                                is CTO Luna Okoro — a blockchain builder with a meme-loving heart and a security-first brain. <br /> <br />
+                                In the jungle of Web3, Banana Inu swings louder than the rest — a meme token with utility, community, and unstoppable vibes. <br /> <br />
 
 
-                                With a background in Solidity, DeFi integrations, and degenerate-proof smart contract architecture,
-                                Luna ensures every $GORE drop, stake, and burn runs flawlessly — trustless, fast, and secure.<br /> <br />
+                                $BNU isn’t just another memecoin: it’s built to be fun, fast, and future-proof. With gas-friendly contracts, community staking, and reward mechanics that keep the hype alive, Banana Inu turns viral energy into on-chain momentum.<br /> <br />
 
-                                Luna’s approach blends crypto-native culture with clean, scalable code,
-                                architecting systems that hold up to real volume, community chaos, and the wild swings of the memecoin frontier. <br /> <br />
+                                The project blends the best of crypto culture with scalable DeFi architecture, creating a token that thrives in chaos, rewards its holders, and grows with its pack. <br /> <br />
 
-                                Because in Web3, the only thing better than going viral —
-                                is doing it on-chain, without breaking.
+                                Because in a world full of copy-paste coins, the only thing better than going bananas — is doing it on-chain, together.
                             </span>
-                            <Link
+                            {/* <Link
                                 target="blank"
                                 href={"https://t.me/GorbaganaRewards"}
-                                className=" flex items-center justify-center w-fit text-sm mt-4 lg:text-lg p-2 border border-green-500 rounded-2xl font-extrabold bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'"
+                                className=" flex items-center justify-center w-fit text-sm mt-4 lg:text-lg p-2 border text-amber-600 border-amber-300 rounded-2xl font-extrabold bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'"
                             >
                                 <BookOpenText className=" mr-2" /> Learn More
-                            </Link>
+                            </Link> */}
                         </div>
                     </motion.h1>
                 </AnimatePresence>

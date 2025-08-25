@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import { Nunito_Sans, Tektur } from 'next/font/google';
-import Logo from "@/assets/reward.jpg"
+import Logo from "@/assets/bananaInu.jpg"
 import Link from 'next/link';
 import Image from 'next/image';
 import FadeIn from './FadeIn';
@@ -28,23 +28,23 @@ const Navbar = () => {
     return (
         <div className=' fixed z-50 w-screen h-[80px]'>
             <FadeIn>
-                <div className=' w-full h-[80px] text-green-600 flex items-center justify-between px-[10px] bg-green-500/10 backdrop-blur-sm'>
+                <div className=' w-full h-[80px] text-amber-300 flex items-center justify-between px-[10px] bg-amber-300/10 backdrop-blur-sm'>
                     {/* Left Container */}
                     <div className=' w-[30%]'>
                         <div className={nunitoSans.className}>
                             <div className=' flex items-center justify-start'>
                                 <Image
                                     src={Logo}
-                                    alt='GorReward Logo'
+                                    alt='Banana Inu Logo'
                                     className=' w-[50px] h-[50px] rounded-full'
                                 />
-                                <h1 className=' uppercase font-semibold text-xl lg:text-2xl ml-3 hidden lg:block'>GorReward</h1>
+                                <h1 className=' uppercase font-semibold text-xl lg:text-2xl ml-3 hidden lg:block'>Banana Inu</h1>
                             </div>
                         </div>
                     </div>
 
                     {/* Middle Container */}
-                    <div className=' w-[30%] hidden lg:flex items-center justify-center'>
+                    <div className=' w-[30%] hidden lg:flex items-center justify-center text-amber-600'>
                         <div className={nunitoSans.className}>
                             <div className={'flex items-center justify-center'}>
                                 <nav className="space-x-4">
@@ -90,10 +90,10 @@ const Navbar = () => {
                     </div>
 
                     {/* Right Container */}
-                    <div className=' lg:w-[30%] flex items-center justify-end'>
+                    {/* <div className=' lg:w-[30%] flex items-center justify-end'>
                         <div className={nunitoSans.className}>
                             <div className=' flex items-center justify-center'>
-                                <Link target='blank' href={"https://t.me/GorbaganaRewards"} className=' focus:outline-none text-sm lg:text-lg mx-2 p-2 border border-green-500 rounded-2xl flex items-center justify-center font-extrabold bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'>
+                                <Link target='blank' href={"https://t.me/GorbaganaRewards"} className=' focus:outline-none text-sm lg:text-lg mx-2 p-2 border border-amber-300 rounded-2xl flex items-center justify-center font-extrabold bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'>
                                     <Image
                                         src={Logo}
                                         alt='Apexium Logo'
@@ -103,7 +103,7 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <button
                         aria-label="Open menu"
@@ -151,8 +151,8 @@ const Navbar = () => {
                             style={{ padding: "20px" }}
                         >
                             <div className={nunitoSans.className}>
-                                <div className=' flex w-full items-center justify-between mb-8 text-green-500'>
-                                    <h3 className=' text-xl text-green-500 font-bold'>
+                                <div className=' flex w-full items-center justify-between mb-8 text-amber-300'>
+                                    <h3 className=' text-xl text-amber-300 font-bold'>
                                         <Image
                                             src={Logo}
                                             alt='Apexium Logo'
@@ -182,19 +182,19 @@ const Navbar = () => {
                                 <ul style={{ listStyle: "none", padding: 0 }}>
                                     <Link
                                         href="/#home"
-                                        className="relative group text-green-500 block w-fit mb-4 text-3xl"
+                                        className="relative group text-amber-300 block w-fit mb-4 text-3xl"
                                         onClick={toggleSidebar}
                                     >
                                         Home
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-green-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-amber-300 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     <Link
                                         href="/#about"
-                                        className="relative group text-green-500 block w-fit mb-4 text-3xl"
+                                        className="relative group text-amber-300 block w-fit mb-4 text-3xl"
                                         onClick={toggleSidebar}
                                     >
                                         About
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-green-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-amber-300 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     {/* <Link
                                         href="/#services"
@@ -236,13 +236,13 @@ const Navbar = () => {
                                         >
                                             <XIcon />
                                         </Link> */}
-                                        <Link
+                                        {/* <Link
                                             target='blank'
                                             href={"https://t.me/GorbaganaRewards"}
-                                            className=' text-green-500 text-2xl mx-2 lg:text-6xl p-2 border-2 border-green-500 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'
+                                            className=' text-amber-300 text-2xl mx-2 lg:text-6xl p-2 border-2 border-amber-300 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'
                                         >
                                             <TelegramIcon />
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                 </ul>
                             </div>
