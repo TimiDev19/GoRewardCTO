@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Banana Inu",
-  description: "The official website of GorReward CTO",
+  description: "The official website of Banana Inu",
 };
 
 export default function RootLayout({
