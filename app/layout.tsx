@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GorReward CTO",
+  title: "Banana Inu",
   description: "The official website of GorReward CTO",
 };
 
