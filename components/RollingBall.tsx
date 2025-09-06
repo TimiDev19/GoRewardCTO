@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import Logo from "@/assets/bananaInu.jpg"
+import Logo from "@/assets/r2l.jpg"
 import Link from "next/link";
 import { Book, BookOpenText } from "lucide-react";
 
@@ -22,7 +22,7 @@ const RollingBall = () => {
 
     return (
         <>
-            <div ref={ref} className="pt-[90px] flex relative flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-white to-white overflow-hidden py-[10px]">
+            <div ref={ref} className="pt-[90px] flex relative flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-red-500 to-red-500 overflow-hidden py-[10px]">
                 {/* Text that will be revealed */}
                 <AnimatePresence>
                     <motion.h1
@@ -34,25 +34,24 @@ const RollingBall = () => {
                         transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
                         <div className=" w-[95%] lg:w-[65%] mx-auto">
-                            <span className=" w-[95%] lg:w-[65%] mx-auto text-xl lg:text-4xl text-amber-600">Time to learn</span>
-                            <span className=' mb-4 flex items-center justify-center uppercase font-bold text-white text-2xl lg:text-6xl p-2 bg-gradient-to-tr from-amber-500 to-amber-300 w-fit rounded-xl'>
+                            <span className=" w-[95%] lg:w-[65%] mx-auto text-xl lg:text-4xl text-black">Time to learn</span>
+                            <span className=' mb-4 flex items-center justify-center uppercase font-bold text-white text-2xl lg:text-6xl p-2 bg-gradient-to-tr from-black to-red-300 w-fit rounded-xl'>
                                 <Image
                                     src={Logo}
                                     alt="Apexium Logo"
                                     className=' w-[50px] h-[50px] rounded-full mr-3'
                                 />
-                                About Banana Inu
+                                About Road to libertad
                             </span>
-                            <span className=" text-xl font-medium mb-4 text-amber-600">
+                            <span className=" text-xl font-medium mb-4 text-black">
 
-                                In the jungle of Web3, Banana Inu swings louder than the rest — a meme token with utility, community, and unstoppable vibes. <br /> <br />
+                                The Road to Libertad
+                                
+                                is more than just a project  it’s a movement build on innovation. <br/> <br />
 
+                                $R2L is building an ecosystem driven by culture, community, and unstoppable energy. <br /> <br /> This isn’t about noise it’s about creating signal, flipping attention into power, and turning belief into momentum. <br /> <br />
 
-                                $BNU isn’t just another memecoin: it’s built to be fun, fast, and future-proof. With gas-friendly contracts, community staking, and reward mechanics that keep the hype alive, Banana Inu turns viral energy into on-chain momentum.<br /> <br />
-
-                                The project blends the best of crypto culture with scalable DeFi architecture, creating a token that thrives in chaos, rewards its holders, and grows with its pack. <br /> <br />
-
-                                Because in a world full of copy-paste coins, the only thing better than going bananas — is doing it on-chain, together.
+                                The journey has only just begun get in now or get left behind ⚔️⛩️
                             </span>
                             {/* <Link
                                 target="blank"

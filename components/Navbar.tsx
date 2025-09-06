@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import { Nunito_Sans, Tektur } from 'next/font/google';
-import Logo from "@/assets/bananaInu.jpg"
+import Logo from "@/assets/r2l.jpg"
 import Link from 'next/link';
 import Image from 'next/image';
 import FadeIn from './FadeIn';
@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <div className=' fixed z-50 w-screen h-[80px]'>
             <FadeIn>
-                <div className=' w-full h-[80px] text-amber-300 flex items-center justify-between px-[10px] bg-amber-300/10 backdrop-blur-sm'>
+                <div className=' w-full h-[80px] text-black flex items-center justify-between px-[10px] bg-black/10 backdrop-blur-sm'>
                     {/* Left Container */}
                     <div className=' w-[30%]'>
                         <div className={nunitoSans.className}>
@@ -44,7 +44,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Middle Container */}
-                    <div className=' w-[30%] hidden lg:flex items-center justify-center text-amber-600'>
+                    <div className=' w-[30%] hidden lg:flex items-center justify-center text-black'>
                         <div className={nunitoSans.className}>
                             <div className={'flex items-center justify-center'}>
                                 <nav className="space-x-4">
@@ -90,10 +90,10 @@ const Navbar = () => {
                     </div>
 
                     {/* Right Container */}
-                    {/* <div className=' lg:w-[30%] flex items-center justify-end'>
+                    <div className=' lg:w-[30%] flex items-center justify-end'>
                         <div className={nunitoSans.className}>
                             <div className=' flex items-center justify-center'>
-                                <Link target='blank' href={"https://t.me/GorbaganaRewards"} className=' focus:outline-none text-sm lg:text-lg mx-2 p-2 border border-amber-300 rounded-2xl flex items-center justify-center font-extrabold bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'>
+                                <Link target='blank' href={"https://t.me/roadtolibertadpublic"} className=' focus:outline-none text-sm lg:text-lg mx-2 p-2 border border-black rounded-2xl flex items-center justify-center font-extrabold bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'>
                                     <Image
                                         src={Logo}
                                         alt='Apexium Logo'
@@ -103,7 +103,7 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
 
                     <button
                         aria-label="Open menu"
@@ -141,7 +141,7 @@ const Navbar = () => {
                             top: 0,
                             left: 0,
                         }}
-                        className=' shadow-md shadow-blue-900 bg-blue-900 navbar-bg text-white'
+                        className=' shadow-md shadow-black bg-black navbar-bg text-red-500'
                     >
                         {/* Sidebar content */}
                         <motion.div
@@ -151,8 +151,8 @@ const Navbar = () => {
                             style={{ padding: "20px" }}
                         >
                             <div className={nunitoSans.className}>
-                                <div className=' flex w-full items-center justify-between mb-8 text-amber-300'>
-                                    <h3 className=' text-xl text-amber-300 font-bold'>
+                                <div className=' flex w-full items-center justify-between mb-8 text-red-500'>
+                                    <h3 className=' text-xl text-red-500 font-bold'>
                                         <Image
                                             src={Logo}
                                             alt='Apexium Logo'
@@ -182,19 +182,19 @@ const Navbar = () => {
                                 <ul style={{ listStyle: "none", padding: 0 }}>
                                     <Link
                                         href="/#home"
-                                        className="relative group text-amber-300 block w-fit mb-4 text-3xl"
+                                        className="relative group text-red-500 block w-fit mb-4 text-3xl"
                                         onClick={toggleSidebar}
                                     >
                                         Home
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-amber-300 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-red-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     <Link
                                         href="/#about"
-                                        className="relative group text-amber-300 block w-fit mb-4 text-3xl"
+                                        className="relative group text-red-500 block w-fit mb-4 text-3xl"
                                         onClick={toggleSidebar}
                                     >
                                         About
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-amber-300 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-red-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     {/* <Link
                                         href="/#services"
@@ -229,20 +229,20 @@ const Navbar = () => {
                                             <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                         </Link> */}
                                     <div className=' w-full flex items-center justify-center mt-6'>
-                                        {/* <Link
+                                        <Link
                                             target='blank'
-                                            href={"https://x.com/ApexiumAgency"}
-                                            className=' text-green-500 text-2xl mx-2 lg:text-6xl p-2 border-2 border-green-500 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'
+                                            href={"https://x.com/R2LonSOL"}
+                                            className=' text-red-500 text-2xl mx-2 lg:text-6xl p-2 border-2 border-red-500 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'
                                         >
                                             <XIcon />
-                                        </Link> */}
-                                        {/* <Link
+                                        </Link>
+                                        <Link
                                             target='blank'
-                                            href={"https://t.me/GorbaganaRewards"}
-                                            className=' text-amber-300 text-2xl mx-2 lg:text-6xl p-2 border-2 border-amber-300 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'
+                                            href={"https://t.me/roadtolibertadpublic"}
+                                            className=' text-red-500 text-2xl mx-2 lg:text-6xl p-2 border-2 border-red-500 rounded-full flex items-center justify-center bg-white/10 backdrop-blur-lg hover:bg-white/0 duration-700'
                                         >
                                             <TelegramIcon />
-                                        </Link> */}
+                                        </Link>
                                     </div>
                                 </ul>
                             </div>

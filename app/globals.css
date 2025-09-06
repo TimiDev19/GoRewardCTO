@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 .logo-bg {
-  background-image: url(../assets/bananaInu.jpg);
+  background-image: url(../assets/r2l.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .banner1 {
-  background-image: url("../assets/gorBanner.png");
+  background-image: url("../assets/bman.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
